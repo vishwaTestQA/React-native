@@ -1,4 +1,4 @@
-import HomeScreen from ".";
+import HomeScreen from "./indexPost";
 
 // export default function App(){
   

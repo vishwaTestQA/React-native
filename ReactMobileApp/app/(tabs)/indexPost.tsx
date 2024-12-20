@@ -85,67 +85,28 @@ import { JustifyContent } from "../ComponentApp/JustifyContent";
 import { Positioning } from "../ComponentApp/Positioning";
 import Pokemon from "../PokemonComp/Pokemon";
 import PokemonTesting from "../PokemonComp/PokemonTesting";
+import ListCommon from "../PokemonComp/ListComponent/ListCommon";
+import FlatListRenders from "../PokemonComp/ListComponent/FlatListRenders";
+import SectionListComp from "../PokemonComp/ListComponent/SectionListComp";
+import TextInputComp from "../PokemonComp/InputComp/TextInputComp";
+import FormLogin from "../PokemonComp/InputComp/FormLogin";
+import LoginFormTest from "../PokemonComp/InputComp/LoginFormTest";
+import FormValidation from "../PokemonComp/InputComp/FormValidation";
+import PostRequestForm from "../PokemonComp/InputComp/PostRequestForm";
+
 const logo = require("../../assets/images/react-logo.png");
 
 export default function HomeScreen(){
-  
-  const charmanderData = {
-    name: "Charmander",
-    image: require("../../assets/pokemon/charmander.png"),
-    type: "Fire",
-    hp:39,
-    moves:["Scratch","Ember","Growl","Leer"],
-    weaknesses:["Water","Rock"]
-  }
-
-  const squirtleData = {
-    name: "Squirtle",
-    image: require("../../assets/pokemon/squirtle.png"), // Replace with the actual image path
-    type: "Water",
-    hp: 44,
-    moves: ["Tackle", "Water Gun", "Tail Whip", "Withdraw"],
-    weaknesses: ["Electric", "Grass"],
-  };
-
-  const bulbasaurData = {
-    name: "Bulbasaur",
-    image: require("../../assets/pokemon/bulbasaur.png"), // Replace with the actual image path
-    type: "Grass",
-    hp: 45,
-    moves: ["Tackle", "Vine Whip", "Growl", "Leech Seed"],
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
-  };
-
-  const pikachuData = {
-    name: "Pikachu",
-    image: require("../../assets/pokemon/pikachu.png"), // Replace with the actual image path
-    type: "Electric",
-    hp: 35,
-    moves: ["Quick Attack", "Thunderbolt", "Tail Whip", "Growl"],
-    weaknesses: ["Ground"],
-  };
-
   return (
-  <SafeAreaView style={styles.safeContainer}>
-  {/* <View style={{backgroundColor:"plum"}}> */}
-     {/* <ImageComp></ImageComp> */}
-     {/* <ScrollViewComp></ScrollViewComp>
-     <ModalComp1></ModalComp1> */}
-     {/* <StyleSheetAndBoxModal/> */}
-     {/* <BoxShadow/> */}
-     {/* <StyleInheritance/> */}
-     {/* <JustifyContent/> */}
-     {/* <AlignItems/> */}
-     {/* <Positioning/> */}
-      {/* </View> */}
-     <ScrollView>
-     <Pokemon {...charmanderData}/>
-     <Pokemon {...squirtleData}/>
-     <Pokemon {...bulbasaurData}/>
-     <Pokemon {...pikachuData}/>
-     <PokemonTesting {...charmanderData}/>
-  </ScrollView>
-  </SafeAreaView>
+  //  <ListCommon/>
+  // <FlatListRenders/>
+  // <SectionListComp/>
+  // <TextInputComp/>
+  // <FormLogin/>
+  // <JustifyContent/>
+  // <FormValidation/>
+  // LoadingIndicator/>
+  <PostRequestForm/>
   )
 }
 

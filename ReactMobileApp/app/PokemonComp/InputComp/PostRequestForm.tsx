@@ -36,7 +36,7 @@ export default function PostRequestForm() {
   const addPost = async () => {
     setIsPosting(true);
     try {
-    const response = await fetch('https://jsonlaceholder.typicode.com/posts', {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
       method: "post",
       headers:{
         "Content-Type":"application/json",
